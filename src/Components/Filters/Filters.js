@@ -2,10 +2,11 @@ import { Button, Form } from "react-bootstrap";
 import { CartState } from '../Context/Context';
 import Rating from "../Rating/Rating";
 import './Filters.css'
+
 const Filters = () => {
     const {
-        productDispatch,
         productState: { byStock, byFastDelivery, sort, byRating },
+        productDispatch,
     } = CartState();
 
     // make state for rating
@@ -16,7 +17,7 @@ const Filters = () => {
             <span>
                 <Form.Check
                     inline
-                    label="Ascending"
+                    label="Ascendente"
                     name="group1"
                     type="radio"
                     id={`inline-1`}
@@ -32,7 +33,7 @@ const Filters = () => {
             <span>
                 <Form.Check
                     inline
-                    label="Descending"
+                    label="Descendente"
                     name="group1"
                     type="radio"
                     id={`inline-2`}
@@ -48,7 +49,7 @@ const Filters = () => {
             <span>
                 <Form.Check
                     inline
-                    label="Include Out of Stock"
+                    label="Incluir Agotados"
                     name="group1"
                     type="checkbox"
                     id={`inline-3`}
@@ -63,7 +64,7 @@ const Filters = () => {
             <span>
                 <Form.Check
                     inline
-                    label="Fast Delivery Only"
+                    label="Envios Rapidos"
                     name="group1"
                     type="checkbox"
                     id={`inline-4`}
