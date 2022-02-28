@@ -1,9 +1,9 @@
 import React, {useState, useEffect } from "react";
 import "./App.css";
-import Header from './Components/Header/Header'
+import Header from './Components/NavBar/NavBar'
 import { BrowserRouter, Route } from "react-router-dom";
 import Home from './Components/Views/Home';
-import Cart from './Components/Views/Cart';
+import Cart from './Components/Views/Item';
 import {bd} from './firebaseconfig';
 import { collection, query, where, getDocs } from "firebase/firestore";
 
